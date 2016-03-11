@@ -1,0 +1,391 @@
+// Contact Panels
+
+.contact-post,
+.contact-panel {
+  
+  .content-post {
+     
+  }
+  .post-wrap {
+      
+  }
+  .post-content {
+    
+  }
+  .post-media {
+    
+  }
+  .form-wrap {
+     
+  }
+}
+
+// ******* BREAKPOINTS ******* //
+
+// 667
+@media (min-width: $break-ml-phone) {
+  .contact-post,
+  .contact-panel {
+    .content-post {
+       
+    }
+    .post-wrap {
+      
+    }
+    .post-content {
+        
+    }
+    .post-media {
+      
+    }
+  }
+}
+// 768
+@media (min-width: $break-lg-phone) {
+  .contact-post,
+  .contact-panel {
+   .post-content {
+      
+   }
+  }
+}
+// 992
+@media (min-width: $break-md-screen) {
+  .contact-post,
+  .contact-panel {
+    .post-content {
+       
+    }
+    .post-media { 
+       
+    }    
+    .qc-form {
+      
+    }
+  }
+  .contact-panel .soc-media-links {
+        
+  }
+}
+
+// Contact Info
+
+.contact-info {
+  
+  address {
+      
+  }  
+  .post-list {
+     
+    li {
+      
+      strong {
+        
+      } 
+      a,
+      span {
+        
+      }
+      &:before {
+          
+      }
+    } 
+  }
+  .soc-media-links {
+    
+  }
+}
+
+// Contact Panel Info Post
+
+.contact-panel-info {
+  
+  // 992
+  @media (min-width: $break-md-screen) {
+    .post-content {
+      
+    }
+    .contact-info {
+        
+    }
+    .post-media {
+       
+    }
+  }
+}
+
+// Contact Panel w/ Map
+
+.contact-panel-map {
+  .post-content,
+  .post-media {
+    
+  }
+  .google-map {
+     
+  }
+  .qc-form {
+     
+  }
+  .soc-media-links {
+       
+  }
+  // 540 ~ 667
+  @media (min-width: $break-md-phone) and (max-width: $break-ml-phone) {       
+    .post-media > div:nth-child(1),
+    .post-media > div:nth-child(2) {
+      
+    }
+     .contact-info {
+         
+    }
+    .google-map {
+       
+    }
+  }
+  // 768
+  @media (min-width: $break-ml-phone) {
+    .post-content {
+       
+    }
+    .post-media {
+       
+    }
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    .post-content {
+       
+    }
+    .post-media {
+       
+    }
+    .qc-form {
+      
+    }
+    .google-map {
+      iframe {
+          
+      }
+    }
+  }
+}
+
+// Contact Links
+
+.contact-links {
+  .post-list {
+     
+    li {
+      
+      strong {
+        
+      } 
+      a,
+      span {
+        
+      }
+      &:before {
+          
+      }
+    }
+  }
+}
+
+// Contact Panel w/ Newsletter Signup
+
+.contact-panel-signup,
+.contact-panel-links {
+  
+  .soc-media-links {
+       
+  }
+  // 540
+  @media (min-width: $break-md-phone) {
+    .post-media > div:nth-child(1),
+    .post-media > div:nth-child(2) {
+        
+    }
+    .post-media > div:nth-child(1) {
+       
+    }
+    .post-media > div:nth-child(2) {
+      
+    }
+  }
+  // 667 ~ 992
+  @media (min-width: $break-ml-phone) and (max-width: $break-md-screen) {
+    .post-media > div:nth-child(1),
+    .post-media > div:nth-child(2) {
+        
+    } 
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    .post-content {
+       
+    }
+    .post-media {
+       
+    }
+    .post-media > div:nth-child(1) { 
+       
+    }
+    .post-media > div:nth-child(2) {
+       
+    }
+  }
+  // 1200
+  @media (min-width: $break-lg-screen) {
+    .post-content {
+       
+    }
+    .post-media {
+       
+    }
+  }
+}
+
+// Contact Banner
+
+.contact-banner {
+   
+  .contact-info {
+       
+  }
+  address {
+    
+    br {
+        
+    }   
+  }
+  .soc-media-links {
+    
+  } 
+  // 600
+  @media (min-width: 37.5em) {
+    .contact-info {
+        
+    }
+    address {
+       
+    }
+    .soc-media-links {
+        
+    }
+  }
+  // 992
+  @media (min-width: $break-md-screen) {  
+    .contact-info {
+       
+    }
+  }
+  // 1200
+  @media (min-width: $break-lg-screen) {
+    address {
+       
+      .sub-header {
+         
+      }
+    }
+  }
+  // 1600
+  @media (min-width: $break-xl-screen) {
+    .contact-info {
+        
+    }
+  }
+  // 2000
+	@media (min-width: $break-xxl-screen) {
+  	 
+  	.contact-info {
+    	
+    }
+	} 
+}
+
+// Newsletter Signup
+
+.newsletter-signup {
+  .form-group {
+      
+  }
+}
+
+// Contact Blocks
+
+.contact-block {
+  
+  .post-content {
+       
+  }
+  .post-media {
+    
+    figure {
+           
+    }   
+  }
+  .btn-primary {
+       
+  }
+  .btn-txt {
+      
+  }
+  &:last-child {
+      
+  }
+}
+
+// Contact Panel w/ Content Info Blocks
+
+.contact-panel-blocks {
+    
+  // 540
+  @media (min-width: $break-md-phone) {
+    .contact-block {
+      .btn-txt {
+          
+      }
+    }
+  }
+   // 667
+  @media (min-width: $break-ml-phone) {
+    .contact-block {
+      .post-content {
+         
+      }
+      .post-media {
+        
+        figure {
+           
+        } 
+      }
+    }
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+
+  }
+  // 1200
+  @media (min-width: $break-lg-screen) {
+    .post-content,
+    .post-media {
+       
+    }
+    .contact-block {
+      
+      .post-content {
+          
+      }
+      .post-media {
+        
+        figure {
+           
+        }  
+      } 
+      .btn-txt {
+        
+      }  
+    }
+  }
+}

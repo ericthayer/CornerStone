@@ -1,0 +1,35 @@
+// Kentico CMS overrides
+
+.cms-bootstrap .btn-actions,
+.btn-dropdown,
+.btn-dropdown button {
+	  
+	&:hover,
+	&:focus {
+			
+	}
+}
+
+.cms-bootstrap .btn {
+	&:hover,
+	&:focus {
+		
+	}
+}
+
+.cms-bootstrap [class^="icon-"], 
+.cms-bootstrap [class*=" icon-"],
+.cms-bootstrap [class^="icon-"]:before,
+.cms-bootstrap [class*=" icon-"]:before {
+  
+}
+
+.cms-bootstrap .cms-navbar>.navbar-nav>li>a[href="#cms-nav-help"] {
+  
+}  
+
+.WebPartZoneBorder,
+.WebPartZoneBorderActive {
+  
+}
+

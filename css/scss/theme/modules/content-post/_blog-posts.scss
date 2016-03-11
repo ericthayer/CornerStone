@@ -1,0 +1,50 @@
+// Blog Posts
+
+.blog-posts {
+		
+	.content-post {
+ 
+		.title {
+				
+		}
+		time {
+				
+		}	
+	}
+	// 568
+	@media (min-width: $break-md-phone) {
+		.post-text {
+				
+		}
+	}
+	// 800
+	@media (min-width: 800px) {
+		.content-post {			
+			figure {
+							
+			}
+			.post-text {
+					
+			}
+		}		
+	}
+	// 992
+	@media (min-width: $break-md-screen) {
+		.content-post {	
+		}
+		&.post-grid {
+			
+			.content-post {
+					
+			}
+		}		
+	}
+	// 1200
+	@media (min-width: $break-lg-screen) {
+		&.post-grid {
+			.content-post {
+				  	
+			}
+		}
+	}
+}

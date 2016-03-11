@@ -1,0 +1,96 @@
+// Calendar Detail
+
+.calendar-detail {
+  
+  .image-caption {
+      
+  }
+  .post-media figure {
+      
+  }
+  .btn-sm {
+    
+    // 480
+    @media (min-width: $break-sm-phone) {
+       
+    }   
+  }
+  // 667
+  @media (min-width: $break-ml-phone) {
+    .btn-sm {
+        
+    }
+  }
+  // 900
+  @media (min-width: $break-900) {
+    .btn-sm {
+      
+    }
+  }
+}
+
+.media-buttons {
+  
+  button {
+    
+    &:first-child {
+       
+    }   
+  }
+  // 320
+  @media (min-width: $break-tiny-phone) {
+    button { 
+      
+      &:first-child {
+         
+      }
+      &:last-child {
+          
+      }   
+    }
+  }  
+}
+
+// Event Time
+
+.event-time {
+    
+}
+
+// Event Label
+
+.event-label {
+      
+}
+
+// Event Location
+
+.event-address,
+.event-time time {
+   
+}
+
+// Event Schedule
+
+.event-schedule a,
+.event-location a {
+    
+}
+
+.event-scheduled,
+.event-ended,
+.event-occurs {
+      
+}
+
+
+// Event Status
+
+.event-status {
+  p {
+     
+  }
+ span {  
+    
+  }
+}

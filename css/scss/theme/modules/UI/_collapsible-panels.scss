@@ -1,0 +1,110 @@
+// Panel Styles
+
+.collapsible-panels {
+     
+}
+
+// Panel Item
+
+.panel {
+  background-color: #DDD;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  overflow: hidden; 
+}
+
+// Panel Heading
+  
+.panel-heading {
+  .title {
+    background-color: #DDD;  
+    font-size: 0.938rem;
+    line-height: 0;  
+    margin: 0;   
+    padding: 0;
+    a {
+      color: #555;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0; 
+    }
+  }
+  span {
+    padding: 1em;
+  }
+  // icon button
+  .panel-close {
+    background-color: #CCC;      
+    svg {
+      fill: darkRed;
+      width: 30px;     
+      vertical-align: middle;
+      transform: rotateZ(45deg) rotateY(180deg);
+      transition: all 0.3s ease;
+    }
+  }
+  // 667
+  @media (min-width: $break-ml-phone) {
+    .title {
+      font-size: 1.125rem;  
+    }
+    span {
+      padding: 0.5rem 0.75rem;
+    }
+  }
+}
+  
+  
+// Panel Collapsed
+  
+.collapsed {
+  .panel-close {
+    background-color: #EEE;
+    background-color: #AAA;   
+    svg {       
+      fill: #FFF;
+      transform: none;
+    }
+  }
+}
+
+// Panel Body
+  
+.panel-body {
+  background-color: white;
+  border: 2px solid #DDD;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding: 1em;    
+}
+
+// Demo Collapse
+
+.demo-collapse {
+  
+  // Panel Heading
+    
+  .panel-heading {
+    // icon button
+    .panel-close {
+      .icon-info {
+        display: none;  
+      }
+    }
+  }
+    
+    
+  // Panel Collapsed
+    
+  .collapsed {
+    .panel-close {
+      .icon-info {
+        display: block;
+      }   
+      .icon-close {
+        display: none;        
+      }
+    }
+  }
+}

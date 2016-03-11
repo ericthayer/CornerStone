@@ -1,0 +1,214 @@
+// Pricing Plans
+
+.pricing-plans {
+	
+}
+
+// Pricing Tables
+
+.pricing-tables {
+   
+}
+
+// Pricing Plan
+
+.pricing-plan {
+	  
+	&:first-child,
+	&:last-child {
+  	
+	}
+	&:first-child {
+  	
+ 	} 
+	&:last-child {
+  	
+ 	} 
+	&:nth-child(2) {
+  	
+	}
+	.no-flexbox & {
+  	 
+	}	
+}
+
+// Plan Title
+
+.plan-title {
+		
+}
+
+
+// Plan Cost
+
+.plan-cost {	
+	color: $blue-light;
+	font: {
+		family: $Montserrat;
+		size: 1.25rem;
+		weight: 700;
+	}	
+	text-transform: uppercase;
+	span {
+			
+	}	
+}
+
+// Plan Price
+
+.plan-price {
+		
+}
+
+.plan-type {
+  border-color: $blue-light;
+  color: $blue-light;   
+}
+
+// Plan Features
+
+.plan-features {
+		
+	li {
+  	
+		&:last-child {
+				
+		}			
+	}	
+	h3 {		
+		font: {
+  		family: $OpenSans;
+  		weight: normal;
+    }				
+	}
+	i {
+			
+		&.icon-ok-squared {
+			
+		}
+		&.icon-cancel-circled {
+			
+		}		
+	}
+}
+
+// Plan Button
+
+.btn-plan {
+  
+}
+
+// Featured Plan
+
+.featured-plan {		
+	.plan-title {
+		color: $blue-dark;
+	}
+	.btn-plan {
+  	
+	}
+}
+
+.featured-ribbon {
+	
+}
+
+// 320
+@media (min-width: $break-tiny-phone) {
+  .pricing-plans {
+     
+  }
+  .featured-plan {
+  	
+	}
+}
+
+// 540
+@media (min-width: $break-md-phone) {
+	.pricing-plans {
+  	.module-title {
+  	 
+  	}  
+	}
+	.pricing-tables {
+		
+	}
+	.pricing-plan {
+  	
+  	&:first-child {
+  		
+  	}
+  	&:last-child {
+    	
+  	}
+  	&:last-child {
+    	
+  	}
+	}
+	.plan-title {
+    
+  }
+}
+
+// 768
+@media (min-width: $break-lg-phone) {
+	.pricing-plan {
+  	.no-flexbox & {
+    	 
+  	}
+	}
+	.plan-type {
+      
+	}
+	.featured-ribbon {
+  	
+  }
+}
+
+// 992
+@media (min-width: $break-md-screen) {
+	.pricing-tables {
+  	
+  }  
+  .pricing-plan {
+  	
+  	&:first-child,
+  	&:nth-child(2n) {
+    	
+   	} 
+		.plan-features {
+			span {
+					
+			}
+		}
+	}	
+	.plan-cost {
+  	  
+    span {
+            
+    }	
+	}	
+	.plan-price {
+    
+  }
+  .btn-plan {
+  	
+  }
+  .featured-ribbon {
+  	
+  }
+}
+// 1200
+@media (min-width: $break-lg-screen) {
+	.plan-cost {
+  	
+  } 
+}
+
+// 1600
+@media (min-width: $break-xl-screen) {
+	.pricing-tables {
+  	
+	}  
+}
+

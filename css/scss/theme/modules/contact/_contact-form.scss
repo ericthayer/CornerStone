@@ -1,0 +1,135 @@
+// Contact Form
+
+.contact-form {  
+  font-family: $OpenSans; 
+  .module-description {
+     
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"] {
+      
+  }
+  .submit-input {
+      
+  }
+  .form-wrap {
+    
+      
+  }
+  .checkbox-list-vertical {
+    label {
+      
+    }
+  }
+  .checkbox-item {
+     
+    label {
+      
+    }  
+  }
+  // 400
+  @media (min-width: 400px) {
+    .checkbox-list {
+     
+      .form-label {
+          
+      }
+    }
+    .checkbox-group {
+      
+      &:first-of-type {
+         
+      }
+      &:last-of-type {
+        //padding-left: 1em;  
+      } 
+    }
+    [class*='btn'] {
+         
+    }
+  }
+  // 667
+  @media (min-width: $break-ml-phone) {
+    .form-wrap {
+         
+    }
+    .form-group {
+      
+      &:first-child {
+        
+        .input-group:last-child {
+           input[type="text"] {
+             
+          } 
+        } 
+      }
+      &:nth-child(2n) {
+        
+        .input-group:last-child {
+           
+        }
+      }
+    }
+    .submit-input {
+      
+      input[type="submit"] {
+          
+      }
+    } 
+  } 	
+}
+
+// Quick Contact Form
+
+.qc-form {
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"] {
+      
+  }
+  & > div:first-child {
+      
+  }
+  .form-wrap {
+      
+  }
+  .submit-input {
+      
+  }
+  &.compact {
+    p {
+       
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
+       
+    }
+  }
+  // 320
+  @media (min-width: $break-tiny-phone) {
+    .form-wrap {
+      
+    }
+    [class*='btn'] {
+            
+    }
+    .submit-input {
+     
+    }    
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    [class*='btn'] {
+       
+    }
+  }
+}

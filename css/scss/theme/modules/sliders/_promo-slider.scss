@@ -1,0 +1,87 @@
+// Promo Slider
+
+.promo-slider {
+   
+  .container {
+    
+  }
+  .module-title {
+     
+  }
+  .gallery {
+   
+  }
+  // Gallery Cell
+  .gallery-cell {
+    
+    img {
+      
+    }
+    &:before {
+       
+    }
+    &.is-selected {
+      
+      img {
+        
+      }
+    }
+  }
+  // "Clicked" Style
+  &.is-clicked {
+    
+  }
+  // Ovverrides
+  .flickity-viewport {
+    
+  }  
+  .flickity-page-dots {
+    
+  }
+  // "Clicked" Notification
+  .logger {
+    
+    span {
+      
+    } 
+  }
+  // 400
+  @media (min-width: 25em) {
+    .flickity-page-dots {
+      
+    } 
+  }
+  // 540
+  @media (min-width: $break-md-phone) {
+    .gallery {
+      
+    }
+    .gallery-cell {
+      
+      &.is-selected {
+        
+      }
+    }
+    .flickity-page-dots {
+      
+    }
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+    .gallery-cell {
+       
+    }
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    .flickity-page-dots {
+      
+    }
+  }
+  // 1200
+  @media (min-width: $break-lg-screen) {
+    .flickity-page-dots {
+      
+    }
+  }    
+}

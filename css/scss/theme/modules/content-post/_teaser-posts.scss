@@ -1,0 +1,77 @@
+// Teaser Posts
+
+.teaser-posts {
+  .module-description {
+     
+  }
+  .content-post {
+        
+  }
+  .post-wrap {
+          
+  }
+  .post-content {
+    
+  }
+  .post-title {
+     
+  }
+  .post-text {
+     
+  }
+  .post-media {
+    figure {
+    }  
+    img {
+       
+    }
+  }
+  [class*='btn'] {
+       
+  }  
+}
+
+// 320
+@media (min-width: $break-tiny-phone) {
+  .teaser-posts {
+    .content-post {
+      
+    }
+    .post-wrap {
+        
+    }
+    .post-content {
+       
+    }
+    .post-media {
+       
+    }
+  }
+}
+
+// 667
+@media (min-width: $break-ml-phone) {
+  .teaser-posts {
+    .content-post {
+      
+    }
+    .post-title {
+       
+    }
+  }
+}
+
+// 768
+@media (min-width: $break-lg-phone) {
+  .teaser-posts {
+    .content-post {
+      
+    }
+    .post-content {
+       
+    }
+    .post-title {
+       
+    }
+  }
+}

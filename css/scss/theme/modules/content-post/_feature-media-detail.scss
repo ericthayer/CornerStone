@@ -1,0 +1,84 @@
+// Feature Media Detail
+
+.feature-media-detail {
+  
+  .post-wrap {
+    
+  }
+  .post-content {
+    
+  }
+  .post-text {
+     
+  }
+  .post-media {
+    .content-post {
+        
+    }
+    .post-wrap {
+     
+    }
+    .post-content {
+       
+    }
+    .post-title {
+       
+    }
+    .post-media {
+       
+    }
+  }
+  .post-list-item {
+    
+  }
+  .btn-primary {
+    font-size: 0.938em;    
+  }
+  // 375
+  @media (min-width: 23em) {
+    .post-media {  
+      .content-post {         
+       
+        &:nth-child(odd) {
+           
+        }
+        &:nth-child(even) {
+          
+        }
+      }
+      .post-content {
+            
+      }
+      .post-media {
+          
+      }
+      .post-text {
+         
+      }
+    }
+  }
+  // 667
+  @media (min-width: $break-ml-phone) {
+    .post-content,
+    .post-media {
+        
+    }
+    .post-media {
+      .content-post {
+          
+      }
+    }
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+    .post-wrap {
+      
+    }
+    .post-content {
+        
+    }
+    .post-media {
+     
+    }
+  }   
+}

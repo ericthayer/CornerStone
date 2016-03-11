@@ -1,0 +1,19 @@
+@import "../../../../../core/css/scss/utilities/variables";
+
+// Font Stacks
+
+// body
+
+$OpenSans: 'Open Sans', $sans-serif;
+
+// Headers & Titles
+
+$Montserrat: 'Montserrat', $sans-serif;
+
+$OpenSansCondensed: 'Open Sans Condensed', $sans-serif;
+
+// Blockquotes
+
+.text-shadow {
+  text-shadow: 0 0 10px #333;
+}

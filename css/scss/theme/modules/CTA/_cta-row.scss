@@ -1,0 +1,124 @@
+// CTA Row 
+
+.CTA-row {
+  .content-post-wrap {
+     
+  }
+  .post-wrap {
+          
+  }
+  .content-post {
+    display: block; 
+    padding: 2em 1em 0;
+    text-align: center; 
+    &:nth-child(2) {
+      background: linear-gradient(to bottom, rgba(190,220,233,1) 0%,rgba(220,236,243,1) 47%,rgba(248,251,253,1) 100%);
+    }
+    &:nth-child(3) {
+     background: url('images/content-img/bg-Publish-Site.png') repeat; 
+    }   
+  }     
+  .post-media {
+ 
+    figure { 
+        
+    }
+  }
+  [class*='btn'] {
+         
+  }
+  // 667
+  @media (min-width: $break-ml-phone) {    
+    .post-wrap {
+      
+    }
+    .post-media,
+    .post-content {
+       
+    }
+    .post-content {
+       
+    }
+    .post-text {
+      
+    }
+  }
+  // 768
+  @media (min-width: $break-ml-phone) {    
+    .content-post {
+      
+      &:nth-child(1) {
+         
+      }   
+      &:nth-child(2) {
+                 
+        .post-wrap{
+          
+        }
+        .post-media {
+          
+          figure {
+             
+          } 
+        }
+        .post-content {
+            
+        }
+      }
+    }
+    .post-wrap {
+      
+    }
+    .post-text {
+      
+    }
+  }
+  // 900
+  @media (min-width: $break-900) {
+    .content-post {
+      &:nth-child(2) {
+         
+        .post-content {
+           
+        }
+      }
+    }    
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    .content-post {
+      
+      &:nth-child(1) {
+         
+      }
+    }
+  }
+  // 1200
+  @media (min-width: $break-lg-screen) {
+    .content-post {
+      &:nth-child(2) {
+         
+      }      
+    }
+    .post-media {
+      figure {
+         
+      } 
+    }
+    .post-content {
+      
+    }
+    .post-title-icon {
+      
+    }
+    .post-text {
+      
+    }
+  }
+  // 1600
+  @media (min-width: $break-xl-screen) {
+    .post-content {
+       
+    }    
+  }
+}

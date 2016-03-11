@@ -1,0 +1,152 @@
+// Footer Styles 
+
+// Columnm Layout
+
+.footer-info,
+.footer-posts,
+.footer-contact-form {
+  
+  .post-content {
+    
+  }    
+}
+
+// Footer Info
+
+.footer-info {
+   
+  .module-title {
+    
+  }
+  .content-post {
+      
+  }
+  .post-wrap {
+    
+  }
+  .post-media {
+      
+  }
+  .post-title {
+     
+  }
+  .content-post ul {
+    // margin-bottom: 1.5em; 
+    li {
+      strong {         
+        text-transform: uppercase;
+      } 
+      a {
+        
+      }
+      i {
+        
+      }
+      span {
+         
+      }
+      &:before {
+          
+      }
+    }
+  }
+}
+
+// Footer Posts
+
+.footer-posts {
+  font-size: 0.875em;  
+  .content-post {
+    padding-top: 0;  
+  }
+  .content-post:last-child {
+    
+    .post-list:last-child {
+       
+    } 
+  }
+  .post-text {
+     
+  }
+  .content-post li:before {
+    color: white;
+  }
+}
+
+// Footer Contact Form
+
+.footer-contact-form {
+    
+  input[type="text"],
+  input[type="number"],
+  input[type="search"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    border: none;
+  }
+  input[type="submit"] {
+    // max-width: 7em;  
+  }
+}
+
+// Contact Footer Styles
+
+.site-footer-contact {
+  background-color: shade($blue-dark, 80%);
+  color: white;
+  text-align: left;
+  a {
+    color: white;
+  } 
+	.container {
+  	// max-width: 25em;  
+	}
+	.post-content {
+   	
+	}
+	// Footer Logo
+  .footer-logo {
+    
+    a {   
+      color: white; 
+    }
+    img {
+      // max-width: 225px;   
+    } 
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+    .container {
+        
+    }	
+  	.module-title {
+    	   
+  	}
+  	.post-content {
+    	
+   	}
+    .footer-info {  	 
+       
+    }
+    .footer-posts {
+       
+    }
+    .footer-contact-form {
+      
+    }
+  }   
+}
+
+// ******* BREAKPOINTS ******* //
+
+// 992
+@media (min-width: $break-md-screen) {
+  .footer-posts {
+   
+  }
+  .footer-contact-form {
+      
+  }
+}

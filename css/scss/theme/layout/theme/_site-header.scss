@@ -1,0 +1,57 @@
+// Header Styles
+
+
+// Header Nav
+
+.header-nav { 
+	a {
+  	display: inline-block;  
+		font: {
+  		weight: 400;
+  		size: 0.9em;
+  		family: $Montserrat;
+    }    
+    text-transform: uppercase;
+    &:last-child {
+      padding-bottom: 0;  
+    }  	  
+	}		
+}
+
+
+// 320
+@media (min-width: $break-tiny-phone) {
+  
+  .site-header {
+    
+    // inside Site Header
+    [class*="-zone"] .container {
+      
+    }
+  }
+  
+  
+  .IE .site-header {
+    [class*="-zone"] {
+      &:last-of-type .container {
+        height: 50px;
+      }
+    }
+  }
+  
+  
+}
+
+
+// 480
+@media (min-width: $break-sm-phone) {
+  .header-nav { 
+  	a {
+      &:last-child {
+        padding-left: .5em;  
+      }
+    }
+  }
+  
+  
+}

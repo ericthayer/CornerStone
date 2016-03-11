@@ -1,0 +1,330 @@
+// Media Viewer
+
+.media-viewer {         
+  // Container Queries    
+  &:before {      
+    // content: '200 300 350 450 540 700 900';
+  }
+  // 540
+  @media (min-width: $break-md-phone) {
+    
+  }
+  // 700
+  &[data-minwidth~="700"] {
+    & > .media-title {
+      
+    }
+  }  
+}
+
+// Media Content 
+
+.media-content {
+  
+  & > .media-title {
+    
+  } 
+  // 540
+  @media (min-width: $break-md-phone) {
+    & > .media-title {
+       
+    }    
+  }  
+}
+
+// Media Meta
+
+.media-meta {
+    
+  span {
+      
+  }
+  .content-label {
+    
+  }
+  // 320
+  @media (min-width: $break-sm-phone) {
+         
+    span {
+        
+    }
+    .content-label {
+         
+    }
+  }        
+}
+
+
+// Meta Text
+
+.media-post-date,
+.media-author {
+  a {
+      
+  }
+}
+
+.media-post-date {
+  
+}
+
+// Audio Player
+
+.audio-media,
+.video-media,
+.photo-media {
+      
+  audio {
+    
+  }
+}
+
+// Toggle States
+
+.audio-media-open {
+  .audio-media {
+    
+  }
+  .media-toggle-audio {
+    background-color: $blue-med;    
+  }
+}
+
+// video toggle
+
+.video-media-open {
+  .video-media {
+    
+  }
+  .media-controls {
+    
+  }
+  .media-toggle-video {
+    background-color: $blue-med;    
+  }
+  // 800
+  @media (min-width: $break-800) {
+    .video-media {
+      
+    }
+    .video-media {
+      .sidebar-main & {
+        
+      }
+    }
+  }
+  // 2000
+  @media (min-width: $break-xxl-screen) {
+    .video-media {
+      .content-main & {
+        
+      }
+    }
+  }
+}
+
+// photo toggle
+
+.photo-media-open {
+  .photo-media {
+   
+  }
+  .media-controls {
+    
+  }
+  .media-toggle-photos {
+    background-color: $blue-med;    
+  }
+  // 800
+  @media (min-width: $break-800) {
+    .photo-media {
+      
+    }
+    .photo-media {
+      .sidebar-main & {
+        
+      }
+    }
+  }
+  // 1600
+  @media (min-width: $break-xl-screen) {
+    .photo-media {
+      .sidebar-main &,
+      .sidebar-main & {
+        
+      }
+    }
+  }
+}
+
+// Media Links
+
+.media-links {  
+  // 200
+  @media (min-width: 200px) {
+    
+  } 
+}
+
+// Media Share Links
+
+.media-share-links {
+     
+  a {
+     
+  }
+  .content-label {
+     
+  }  
+  // 200
+  @media (min-width: 240px) {
+ 
+  }
+  // 320
+  @media (min-width: $break-tiny-phone) {
+        
+    .content-label {
+        
+    }
+  }
+  // 480
+  @media (min-width: $break-sm-phone) {
+     
+  }   
+}
+
+// Media Download Button
+
+.media-download-btn {
+  
+  a {
+      
+  }
+  [class^='icon'] {
+    
+  }
+  p {
+     
+  }
+  // 240
+  @media (min-width: 240px) {
+      
+  }  
+  // 320
+  @media (min-width: $break-tiny-phone) {
+    a {
+      
+    }
+    p {
+      
+    }
+    [class^='icon'] {
+      
+    }
+  }
+  // 480
+  @media (min-width: $break-sm-phone) {
+    
+  }    
+}
+
+// Media Controls
+
+.media-controls {  
+  // 200
+  @media (min-width: 240px) {
+    
+  }  
+  // 540
+  @media (min-width: $break-md-phone) {
+    
+  }    
+}
+
+// Media Control Button
+
+[class^='media-toggle'] {
+  background: darken($blue-med, 15%);
+  &:hover,
+  &:focus {
+    
+  }
+  // 200
+  @media (min-width: 200px) {
+    
+  }
+  // 540
+  @media (min-width: $break-md-phone) {
+         
+  }    
+}
+
+// ******* OVERRIDES ******* //
+
+// 667
+@media (min-width: $break-ml-phone) {
+  .sidebar-main,
+  .sidebar-main > .cq[data-minwidth~="200"] {    
+    .media-meta {
+          
+      span {
+          
+      }
+      .content-label {
+           
+      }
+    }
+  }
+}
+
+
+// 800
+@media (min-width: $break-800) {
+  .media-controls {
+    // 450
+    .cq[data-minwidth~="450"] & {
+       
+    }
+  }
+  .sidebar-main,
+  .sidebar-main > .cq[data-minwidth~="200"]  {
+    .media-viewer {
+      
+    }
+    .media-content,
+    .media-controls {            
+       
+    }
+    .media-content {
+      & > .media-title {
+          
+      }
+    }
+    .media-meta,
+    .media-controls {
+      
+    }
+    [class^='media-toggle'] {
+      
+    }
+  }
+  .no-js .sidebar-main {
+    .media-content,
+    .media-controls {
+        
+    }
+    .media-controls {
+      
+    }
+    [class^='media-toggle'] {
+      //width: 50%; 
+    }
+  }
+}
+
+// 1200
+@media (min-width: $break-lg-screen) {
+  .media-meta {
+   
+  }
+}

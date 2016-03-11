@@ -1,0 +1,69 @@
+// Site Footer w/ Content Posts
+
+.site-footer-posts,
+.site-footer-basic {
+  background-color: shade($blue-dark, 80%);
+	color: white;
+	font: {
+  	family: $Montserrat;
+  }  
+	// text-align: center; 
+	a {
+  	color: white;
+	}
+	.content-post li {
+    span {
+      display: inline-block;  
+      padding-left: 0.25em; 
+    }
+  }
+  .container {
+      
+  }
+  .post-content {
+       
+  }
+  .post-list {
+  	li:before {
+      // content: "";
+      // margin-right: 0;  
+    }
+	} 
+  .footer-info {
+    
+  }
+  .soc-media-links {
+    
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+    .footer-info {  
+      // width: 30%;
+      .post-list-item a[class*="circled"] {
+        span {
+          // @include sr-only;
+        }
+      }  
+    }
+    .footer-posts {      
+      // padding-left: 5%; 
+      // width: 35%;
+      .post-text {
+         
+      }
+      .post-list li {
+        span {
+          
+        }
+        .soc-media-links {
+          a {
+            
+            i:before {
+              
+            } 
+          }
+        }
+      } 
+    }
+  }
+}

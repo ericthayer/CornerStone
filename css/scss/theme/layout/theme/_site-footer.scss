@@ -1,0 +1,146 @@
+// Footer Styles 
+
+.site-footer {
+	color: white;
+	padding-bottom: 0;  
+	font: {
+  	family: $Montserrat;
+  }  
+	// text-align: center; 
+	a {
+  	color: white;
+	}
+	.icon {
+  	fill: white;
+	}
+	.content-post li {
+    span {
+      display: inline-block;  
+      padding-left: 0.25em; 
+    }
+  }
+  
+  [class*="-zone"] {
+    &:nth-child(3) {
+      background-color: #166791;
+    }
+  }
+}
+
+// Footer Logo
+
+.footer-logo {
+  height: 50px; 
+  img {
+    max-width: 225px;  
+  }
+  .IE & {
+    img {
+      height: 30px;
+      max-width: 100%;   
+    }
+  } 
+}
+
+// Footer Nav
+
+.footer-nav {
+  padding-top: .5em;  
+	a {
+  	font: {
+    	size: 0.875em;
+    	weight: 700;
+    }
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+	}
+	// 320
+	@media (min-width: $break-tiny-phone) {
+  	a {   
+    	// width: 45%;   
+  	}
+	}
+	// 480
+	@media (min-width: $break-sm-phone) {
+  	a {
+    	// width: 30%;   
+  	}
+	}
+	// 540
+	@media (min-width: $break-md-phone) {
+  	a {  
+    	// width: 25%;
+    }  
+	}
+	// 667
+	@media (min-width: $break-ml-phone) {
+  	a {  
+    	// width: auto;  
+  	}
+	}	
+}
+
+// Footer Contact Bar
+
+.footer-contact-bar {
+	
+}
+
+.footer-contact-links {
+   
+  a {
+    font: {
+    	size: 1em;
+    	weight: 700;
+    }  
+    text-transform: uppercase;
+    i {
+    	&:before {
+      	 
+    	}
+  	} 
+    // 540
+    @media (min-width: $break-md-phone) {
+             
+    }  
+  }
+}
+
+// Footer Icons
+
+.footer-icons {
+  margin-bottom: 1em; 
+  [class^="icon-"]:before, 
+	[class*=" icon-"]:before {
+			 
+ 	}		
+}
+
+.footer-copyright {   
+  font-size: 0.875em;   
+}
+
+
+// Site Copyrights
+
+.site-copyright {
+  //background-color: $blue-dark;
+  //color: white;   
+  p {      
+  }
+  // 768
+  @media (min-width: $break-lg-phone) {
+   
+  }   
+}
+
+// These footers are currently using classes to demo the style.
+// ".site-footer-contact, .site-footer-posts, .site-footer-basic"
+ 
+// Consider removing "-contact, -posts, -basic" in markup before pushing to prod.
+// & comment out the default, "site-footer" import and any other footer imports not being used.
+/*
+@import "../footer/contact-footer";
+@import "../footer/content-post-footer";
+@import "../footer/basic-footer";
+*/

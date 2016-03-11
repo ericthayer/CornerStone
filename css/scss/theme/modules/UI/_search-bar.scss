@@ -1,0 +1,19 @@
+// Search Bar  
+
+.search-bar {
+	input[type="text"] {
+	  border: none;				
+	}
+	input[type="submit"],
+	input[type="submit"]%btn {
+		
+		&:hover,
+		&:focus {
+  		
+		}	
+	}
+	// 667
+	@media (min-width: $break-ml-phone) {
+		
+	}
+}

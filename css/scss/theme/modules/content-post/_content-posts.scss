@@ -1,0 +1,203 @@
+// -- Content Posts  --
+
+.content-post-wrap {
+  
+}
+
+// Content Post
+
+.content-post {
+   
+  .button-group [class*='btn'],
+  [class*='btn'] {
+    
+    &:last-child {
+		  
+	  }     
+  }
+  figure {
+    img {
+      
+    }  
+  }
+  .title-label {
+    
+  }
+}
+
+// Post Wrap
+
+.post-wrap {
+        
+}
+
+// Post Content
+    
+.post-content {
+  margin-bottom: 1em;
+  vertical-align: top;  
+  //text-align: center;
+}
+
+// Post Titles
+
+.post-title {
+   font-size: 1.75em; 
+}
+
+.post-subtitle {  
+      
+}
+
+.post-content h3 {
+    
+}
+
+// Post Title Icon
+
+.post-title-icon {
+    
+}
+
+// Post List
+
+.content-post ul {
+  
+  // Post Item
+  li {
+      
+    a { 
+      &:hover,
+      &:focus {
+        
+      }
+    }
+    &:last-child {
+       
+    }    
+  } 
+}
+
+.post-list-title {
+   
+}
+
+.list-label {
+     
+}
+
+// Post Media
+
+.post-media {
+
+  figure {
+     
+  }
+  .media-wrap {
+     
+  }
+  .button-group {
+     
+  }
+  .qc-form {
+     
+  } 
+}
+
+// 400
+@media (min-width: 25em) {
+  .content-post {
+    [class*='btn'] {
+      
+    } 
+  }
+  .post-media {
+    .qc-form {
+      
+    }
+  }
+  .content-post,
+  .post-content {
+    
+  }
+  .content-post li {
+    &:before {
+          
+    }
+    span {
+        
+    } 
+  }
+}
+// 480
+@media (min-width: $break-sm-phone) {
+  .content-post {
+    .button-group [class*='btn'],
+      [class*='btn'] { 
+        
+    }
+    .button-group {
+       
+      [class*='btn'] {
+           
+      }       
+    }
+  }
+  .content-post ul {
+       
+  }
+}
+   
+// 540
+@media (min-width: $break-md-phone) {
+  .content-post {    
+    [class*='btn'] {
+ 
+    }
+    .button-group {
+      [class*='btn'] {
+      }
+    } 
+  }
+}
+
+// 667
+@media (min-width: $break-ml-phone) {
+  .post-wrap {
+    
+  }
+  .post-media {
+     
+    .media-wrap {  
+       
+    }
+    .contact-form,
+    .qc-form {
+       
+      .container {
+          
+      }
+    }
+  }
+  .post-content {
+     
+    .button-group {
+
+    }  
+  }
+  .content-post ul {
+    
+  }
+}
+// 768
+@media (min-width: $break-lg-phone) {
+  .post-title {
+     
+  }
+}
+// 992
+@media (min-width: $break-md-screen) {
+  .post-content {
+      
+  }
+}

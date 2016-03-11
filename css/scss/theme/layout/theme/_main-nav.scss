@@ -1,0 +1,236 @@
+  // Main Nav
+
+.main-nav {
+   
+}
+
+// Site Logo
+
+.site-logo {
+  width: 100%;  
+  max-width: 200px;
+	a {
+	  // @include hide-text;
+  }
+	&:hover,
+	&:focus {
+  	a {
+    	// @include hide-text;
+  	}
+	}
+}
+
+// 320
+@media (min-width: $break-tiny-phone) {
+  .main-nav {
+    .container {      
+    }
+  }
+  .site-logo {
+           
+	}
+  .nav-toggle {    
+    &:before {         
+    }
+  }
+  .nav-toggle.active {    
+  }
+}
+
+// 480
+@media (min-width: $break-sm-phone) {
+	.site-logo {
+  	    
+  } 
+}
+
+// 800
+@media (min-width: $break-800) {
+  .main-nav {
+           
+  }
+  .site-logo {
+    //width: 25%;       
+  } 
+}
+
+//  Multi Level Nav
+
+// < 800
+@media (max-width: $break-800) {
+  
+  
+}  
+
+// Site Nav
+
+.nav-collapse {  
+	 & > ul {
+   }
+   li {		
+	  & > a {
+  	  // background-color: #EEE;
+		  // color: #888; 
+		  font-size: 1.1em;
+		  font-family: $Montserrat;
+ 		  text-transform: uppercase;
+		  transition: background 0.4s ease, 
+		              color 0.4s ease, 
+		              padding 0.4s ease;
+		}
+  }
+  
+  .dropdown,
+  li {
+    i {
+      display: none;  
+    }
+  }
+	// Submenu
+  .sub-menu {
+    & > li {  	   
+  	  & > a {
+    	  //background-color: $blue-light;
+  		  //color: white; 	
+  		}
+  	}
+  	li:hover a {
+  		//background-color:  darken($blue-med, 5%);
+  		//color: white;
+  		padding-left: 1.5em;	
+  	}
+  	.sub-menu {
+  		li > a {
+        //background-color: darken($blue-med, 5%);
+        &:hover {
+          //background-color: darken($blue-med, 10%);
+      	}
+  		}
+  	}
+  }
+	.active {
+		a {
+			//color: $theme-link;				
+		}
+	}
+  li:hover {
+		a {
+			//background-color: darken($theme-link, 5%);
+			//color: white;
+		}			
+	}
+}
+
+// Nav Toggle
+
+.nav-toggle {
+	&:before {
+  	box-shadow: 0 -3px 0 rgba(black, 0.15) inset;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: $Montserrat;
+    //text-shadow: $blk-text-shadow;
+    // Use this for a "hamburger" icon or insert any icon symbol here.
+    // background: transparent;
+    // box-shadow: none;
+    // color: #BBB;
+    // font-family: $font-icon;
+	  // font-size: 50px;
+	  // content: '\e874'; // (Hamburger Menu Icon)
+	  // text-shadow: none; 	
+  }
+  // 320
+  @media (min-width: $break-tiny-phone) {
+    
+  }
+}
+
+// Nav Toggle Active
+
+.nav-toggle.active {      
+  &:before {
+  	// background: #EEE;
+  	// color: darkRed;
+  	// content: '\e850'; 
+  }
+  // 320
+  @media (min-width: $break-tiny-phone) {
+ 
+  }
+}
+
+// Show Nav @ 800 
+@media (min-width: $break-800) {  
+  .nav-collapse {
+		& > ul {	
+			// min-height: 25px; 
+		}	
+	  li {
+		  & > a {
+			  //background: none;
+		    margin: 0;
+		    padding-top: 0;
+		    padding-right: 0;
+		    padding-bottom: 0;
+		    padding-left: 0;
+		    font-size: 1em; 
+		    line-height: 1;
+		    height: auto; 	
+		    text-align: right;
+		    position: relative;
+		    transition: color 0.4s ease,
+		                padding 0.4s ease;
+		    z-index: 1001;
+		  }
+		  // link icon
+		  i {
+			  // display: none;
+		  }
+	  }	
+	  li:hover {
+			a {
+				//background: none;
+				//color: $theme-link;
+			}			
+		}	
+		li.dropdown {
+
+			&:hover {
+  			& > .sub-menu {  
+					.sub-menu {   
+					}
+				}  
+			}
+		}
+		.sub-menu {
+		  // width: 300px;
+		  z-index: 1000;
+		  & > li {				  
+				& > a {
+					//background: $blue-med;
+					//color: white;	
+					display: block;
+					&:hover {
+            //background-color: darken($blue-med, 10%);
+        	}						
+				}				
+			}
+			li:hover a {
+			  padding-left: 1em;	
+			}
+			.sub-menu { 
+    		// left: 300px;  
+    		li > a {
+          //background-color: darken($blue-med, 10%);
+          &:hover {
+            //background-color: darken($blue-med, 15%);
+        	}        		
+    		} 
+  		}
+	  }
+	  li:last-child .sub-menu {
+			// left: auto;
+			// right: 0;  
+		}
+	}  
+}

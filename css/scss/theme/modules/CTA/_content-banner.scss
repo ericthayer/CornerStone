@@ -1,0 +1,308 @@
+// Content Banner 
+
+.content-banner {
+ 
+  .container {
+      
+  }  
+  [class*='btn'] {
+       
+  }
+}
+
+// Banner Media
+
+.banner-media {
+  figure {
+     
+  }
+}
+
+// Banner Title
+
+.banner-title {   
+  letter-spacing: -0.02em; 
+}
+
+.banner-text {
+  
+  // 992
+  @media (min-width: $break-md-screen) {
+      
+  }  
+}
+
+// Banner CTA
+ 
+.banner-cta {
+    
+}
+
+// Banner Themes
+
+// Light Colored Style  
+.content-banner-light {
+  background: linear-gradient(45deg, #72d8e5 0%,#d5edeb 100%);
+  color: shade(#23aabc, 80%);
+  [class*='btn'] {
+    color: #99dde7;
+    text-shadow: none;
+    background-color: shade(#23aabc, 70%);
+    &:hover,
+    &:focus {
+      background-color: shade(#2da4a1, 60%);
+      color: white;
+    }
+    &:active {
+      background-color: shade(#2da4a1, 80%);
+    }
+  }
+}
+  
+// Dark Colored Style  
+.content-banner-dark {   
+  background: linear-gradient(45deg, #3f4c6b 0%,#606c88 100%);
+  color: white;
+  [class*='btn'] {
+    background-color: shade(#606c88, 65%);
+    &:hover,
+    &:focus {
+      background-color: tint(#606c88, 95%);
+    }
+    &:active {
+      background-color: shade(#606c88, 50%);
+    }
+  }
+}
+  
+// w/ Media Elements  
+.content-banner-media {
+   
+  .banner-content {
+     
+  }
+}
+
+// Media Left
+.content-banner-media-left {
+   
+}
+  
+// CTA - use inline SVG if possible  
+.content-banner-cta {
+   
+  .banner-content {
+     
+  }
+  .banner-cta {
+       
+    img {
+        
+    }
+  }
+}
+
+// CTA Text - two col feature text
+  
+.content-banner-cta-text {
+  
+  // Banner Content
+  .banner-content {
+      
+  }
+  // Banner Title
+  .banner-title {
+    font: {
+      size: 2.5em;
+      size: 2.5rem;
+    }   
+  }
+  // Banner Media
+  .banner-media {
+    
+  }
+  // Banner Text
+  .banner-text {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &:first-child {
+          
+      }
+    }
+    ul {
+        
+      li {
+        
+      }
+    }
+  }
+  // Buttons 
+  .button-group {
+      
+    .btn {
+       
+    }
+  }
+  // 375
+  @media (min-width: 375px) {
+    .button-group {
+      [class*='btn'] {
+        
+      }        
+    } 
+  }
+}    
+
+// 540
+@media (min-width: $break-md-phone) {  
+  .content-banner {
+    
+  }  
+}
+
+// 667
+@media (min-width: $break-ml-phone) {
+  .content-banner-cta {
+    .banner-cta { 
+      
+    }
+    .banner-cta:nth-child(2) {
+        
+    }
+    // layout Options
+    &.lg-left {
+      .banner-cta { 
+         
+      }
+      .banner-cta:nth-child(2) {       
+         
+      }
+    }
+    // layout Options
+    &.lg-right {
+      .banner-cta {          
+        
+      }
+      .banner-cta:nth-child(2) {      
+         
+      }
+    }
+  }
+}
+
+// 768
+@media (min-width: $break-lg-phone) {
+
+}
+
+// 992
+@media (min-width: $break-md-screen) {
+  .content-banner {
+    
+  }
+  .banner-content,
+  .banner-media {
+     
+  }
+  .banner-content {
+     
+  }
+  .banner-media {
+    
+    [class*='btn'] {
+         
+    } 
+  }
+  .banner-title {
+    font: {
+      size: 3em;
+      size: 3rem;
+    } 
+  }
+  .banner-text {
+      
+  }
+  
+  // Content Banner CTA Text
+  
+  .content-banner-cta-text {
+    .banner-content {
+      
+    }
+    .banner-media {
+      
+      [class*='btn'] {
+           
+      } 
+    }
+    .banner-title {
+      font-size: 2.5em; 
+    }
+    .button-group {
+        
+    }    
+  }
+  
+  // Content Banner Media
+  
+  .content-banner-media {
+    .banner-content {
+       
+    }
+    .banner-title {
+      font: {
+        size: 2.25em;
+        size: 2.25rem;
+      } 
+    }
+    .banner-text {
+        
+    }
+    .banner-media {
+       
+    }
+    .button-group {
+      
+    }
+  }
+  .content-banner-media-left {
+    .container {
+      
+    }
+    .banner-content {
+       
+    }
+  }
+  .no-flexbox {
+   .content-banner-media-left {
+      .container {
+          
+      }
+      .banner-content {
+          
+      }   
+    }
+  }
+}
+
+// 1600
+@media (min-width: $break-xl-screen) {
+  .content-banner {
+    .container {
+      
+    }
+  }
+  .banner-media {
+    
+    .button-group {
+      
+    }
+    [class*='btn'] {
+         
+    }
+  }
+}

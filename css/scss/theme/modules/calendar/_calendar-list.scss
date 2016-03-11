@@ -1,0 +1,183 @@
+// Calendar List
+
+.calendar-list {
+  .content-post {
+      
+  }
+  .post-content {
+    
+  }
+  .image-caption {
+       
+  } 
+  figcaption {
+    
+    &:hover {
+     
+      .image-caption {
+           
+      }
+    }
+  }    
+}
+
+// Event Expired
+
+.event-expired {
+  .post-media {
+    img {
+      
+    }
+  }
+  .image-caption {
+      
+  }
+  .register-btn {
+      
+  }
+  figcaption {
+       
+    &:after {
+    	
+    }
+    &:hover {
+      .image-caption {
+       
+      }
+      &:after {
+        
+      }
+    }
+  }
+}
+
+// Detail Button
+
+.detail-btn {
+   
+}
+
+// Event Details
+
+.event-details {
+    
+}
+
+// Show/Hide/Register Buttons
+
+.show-panel,
+.hide-panel,
+.register-btn,
+.share-btn {
+   
+}
+
+.hide-panel {
+
+}
+
+.panel-content {
+     
+}
+
+// Panel Open
+
+.panel-open {  
+  .show-panel {
+      
+  }  
+  .hide-panel {
+    
+    [class^='icon-']:before {
+        
+    }       
+  }
+  .panel-content {
+       
+  }     
+}
+
+// 320
+@media (min-width: $break-tiny-phone) {
+  .calendar-list {
+    .image-caption {
+      
+    }
+    .show-panel,
+    .hide-panel,
+    .register-btn {
+          
+    }
+  }
+}
+
+// 667
+@media (min-width: $break-ml-phone) {  
+  .panel-open {
+     
+    .hide-panel {  
+       
+    }   
+  }
+  .calendar-list {
+    .post-media {
+       
+    }
+    .event-location,
+    .event-schedule,  
+    .event-state,
+    .event-recurring {
+          
+    } 
+    .event-location,
+    .event-schedule { 
+      
+    }
+    .event-schedule {
+      .event-label {
+
+      }
+    }
+    .event-state,
+    .event-recurring {
+       
+    }
+    .event-time.start,
+    .event-time.end {
+        
+    }
+    .event-state {
+       
+    }
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    .calendar-list {
+      .content-post {
+          
+      }
+      .post-content {
+               
+      }
+      .post-media {
+         
+      }
+      .event-location,
+      .event-schedule {
+         
+      }
+      .event-location {
+        
+      }
+      .event-schedule {
+        
+      }
+      .event-time.start {
+         
+      }
+      .event-status {
+       
+      }
+    }
+  }
+}

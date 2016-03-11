@@ -1,0 +1,63 @@
+// Contact Banner
+
+.contact-banner {
+	.wrap {
+					
+	}
+	a {
+		
+	}
+	// 768
+	@media (min-width: $break-lg-phone) {
+		.wrap {
+				
+		}
+	}			
+}
+
+
+// Contact Banner Item
+
+.contact-banner-item {
+	
+	h2 {
+				
+		span {
+					
+		}	
+	}
+	address,
+		ul,
+		a {
+			font-family: $Montserrat;
+			text-transform: uppercase;
+		}
+	&:last-child {
+			
+	}
+	// 480
+	@media (min-width: $break-sm-phone) {
+		
+	}
+	// 667
+	@media (min-width: $break-ml-phone) {
+			
+	}
+	// 900
+	@media (min-width: 900px) {
+			
+		h2 {
+					
+			span {
+				
+				&.icon-phone-circled {
+							
+				}			
+			}
+		}
+		address,
+		ul {
+				
+		}	
+	}
+}

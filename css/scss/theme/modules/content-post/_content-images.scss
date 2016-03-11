@@ -1,0 +1,209 @@
+// Content Image Styles
+
+figure {
+	
+	img {  	   
+  	 
+	}
+	&:hover {
+  	
+	}
+}
+
+
+// Image Caption
+
+figcaption {
+  
+	p {
+		
+  }	
+}
+
+.image-caption {		
+	font-family: $Montserrat;	
+	a {
+		
+	}		
+}
+
+// Circle Thumbnail
+
+.circle-mask {
+	
+	figcaption {
+		
+		a {
+			
+		}
+		&.fade-in,
+		&.zoom-in,
+		&.slide-left,
+		&.slide-right			
+		 {
+			 
+		}
+		&.zoom-in {
+			.image-caption {
+				font-size: 3em;	
+			}
+			&:hover {
+				.image-caption {
+						
+				}
+			}
+		}
+	}
+		
+	.image-caption {
+			
+	}
+		
+	// 600
+	@media (min-width: 600px) {
+		&.md-size {
+			
+			figcaption {
+									
+			}	
+			.image-caption {
+					
+			}
+		}
+		&.sm-size {
+			
+			figcaption {
+						
+			}
+			.image-caption {
+					
+			}
+		}
+	}
+	// 768
+	@media (min-width: $break-lg-phone) {
+		figcaption {
+			
+			&.zoom-in:hover {
+				.image-caption {
+						
+				}
+			}
+		}
+		.image-caption {
+				
+		}	
+	}
+}
+
+// Rounded Thumbnail
+.rounded-mask {
+	
+	figcaption {
+		
+		&.zoom-in,
+		&.slide-left {
+			
+		}
+		&.slide-left,
+		&.slide-up {
+			
+		}
+	}
+	&.sm-size {
+		figcaption {
+			
+		}	
+	}
+	// 667
+	@media (min-width: $break-ml-phone) {
+		.image-caption {
+				
+		}
+	}
+}	
+	
+// Banner Image 
+
+.banner {
+	img {
+	  
+	}
+}
+	
+// Rollover 
+figure:hover {
+	
+	figcaption {
+		
+		&.slide-up {
+		  
+		}
+		&.slide-down {
+		  
+		}
+		&.slide-right {
+			 
+		}
+	}
+}
+	
+// 480
+@media (min-width: $break-sm-phone) {
+	.image-caption {
+		  
+	}
+}
+	
+// 600
+@media (min-width: 600px) {
+	// Figure Sizes
+	.md-size,
+	.sm-size {
+					
+	}
+	.md-size {
+			
+	}
+	.sm-size {
+		
+		figcaption {
+				
+		.image-caption {
+				
+			}	
+		}	
+	}
+	// Image Caption
+	figcaption {
+		// Zoom
+		&.zoom-in {				
+			.image-caption {
+				
+			}
+			&:hover {
+				.image-caption {
+						
+				}
+			}
+		}
+		// Slide Left
+		&.slide-up,
+		&.slide-left {
+			.image-caption {
+					
+			}
+		}			
+	}		
+}
+// 992
+@media (min-width: $break-md-screen) {
+	.md-size {
+		 
+	}
+	.sm-size {
+		figcaption {
+				
+		}	
+	}
+}

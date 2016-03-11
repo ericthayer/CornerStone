@@ -1,0 +1,87 @@
+// Feature Posts
+
+.feature-post-rows {
+  width: 100%;
+  // 667
+  @media (min-width: $break-ml-phone) {
+    .post-content {      
+       
+    }
+    .post-media {
+       
+    }
+    .content-post {
+        
+       &:nth-child(even) {         
+        .post-wrap{
+          
+        }
+        .post-content { 
+            
+        }
+      }
+    }
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    .post-content {      
+       
+    }
+    .post-media {
+      
+    }
+  }
+}
+
+// Feature Posts
+
+.feature-post {
+  .post-content {
+    
+  }
+  .post-content,
+  .post-media {
+      
+  }
+}
+
+.feature-posts {
+  
+  .post-content,
+  .post-media {
+      
+  }
+  .content-post,
+  .post-content,
+  .post-list {
+    
+  }
+  .post-list {
+    li span {
+        
+    }
+  }    
+  .post-content {
+    
+    p {
+       
+    }
+  }  
+  // 667
+  @media (min-width: $break-ml-phone) {
+    .post-content p {
+      
+    }
+    .post-list {
+      li {
+        
+      } 
+    }
+  }
+  // 992
+  @media (min-width: $break-md-screen) {
+    .btn-primary {
+        
+    }  
+  }
+}

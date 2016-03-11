@@ -1,0 +1,202 @@
+// Buttons
+
+@mixin button {
+	border-radius: 4px;
+	font: {
+		family: $OpenSans;
+		weight: 800;
+	}
+	text-transform: uppercase;
+	text-shadow: $blk-text-shadow-neg;
+	transition: color 0.4s ease,
+	            background 0.4s ease,
+              box-shadow 0.4s ease;	
+	&:hover,
+	&:focus {
+		box-shadow: 0 -3px 0 rgba(white, 0.5) inset;
+		cursor: pointer;
+	}
+	&:active {
+  	//background-color: darken($blue-med, 10%);
+	}
+	// 375
+	@media (min-width: 375px) {
+  	  
+	}
+}
+
+@mixin button-hero {
+  background: transparent;
+  border: 5px solid rgba(white, 0.25);
+  box-shadow: 0 0 0 1px rgba(white, 0.5) inset, 0 0 0 1px rgba(white, 0.5);
+  &:hover,
+  &:focus {
+    background: rgba(black, 0.15);
+    border: 0.5em solid rgba(white, 0.9);
+    box-shadow:  0 0 0 1px rgba(white, 0) inset, 0 0 0 1px rgba(white, 0);
+  }  
+}
+
+.btn,
+[class*='btn'] {
+  @include button;
+} 
+
+// Button Sizes
+
+.btn-lg {
+	
+	// 480
+	@media (min-width: $break-sm-phone) {
+					
+	}
+}
+
+.btn-md {
+  // 480
+  @media (min-width: $break-sm-phone) {
+	  
+	}
+}
+
+.btn-sm {
+  
+  [class^='icon-']:before,
+  [class*=' icon-']:before {
+    
+  }		
+}
+
+
+// Button Types
+
+.btn-primary,
+.register-btn {
+	//background-color: $btn-primary;
+	&:hover,
+	&:focus {
+		
+	}
+  &:active {
+    
+  }	
+}
+
+.register-btn a {
+  
+}
+
+.share-btn {
+  //background-color: $blue-med;
+  a {
+    
+  }
+}
+
+.btn-txt {
+	text-shadow: none;		
+	&:hover,
+	&:focus {
+		
+	}
+}
+
+.btn-outline {
+	
+	&:hover {
+			
+	}
+}
+
+.btn-hero {
+  
+  &:hover,
+  &:focus {
+    
+  }  
+}
+  
+.helper-link {
+    
+  a {
+    
+  }
+}
+
+// Submit Buttons
+
+.btn-submit {
+  
+	&:hover,
+	&:focus {
+  	 
+	}
+	&:active {
+    
+  }		
+}
+
+// Contact Buttons
+
+.contact-btns {
+	
+	.btn-outline {
+			
+	}
+	.icon-mobile {
+		
+		&:before {
+			
+		}		
+	}	
+}
+
+// Button Group
+
+.button-group {
+    
+	.btn {
+			 	
+	}
+	// 375
+	@media (min-width: 375px) {
+  	.btn {
+    	  
+  	}
+	}
+	// 568
+	@media (min-width: $break-md-phone) {
+		.btn-txt {
+			
+			&:nth-child(3n) {
+					
+			}
+		}
+	}
+	// 667
+	@media (min-width: $break-ml-phone) {
+  	
+		.btn-txt {
+  			
+		}
+	}
+	.no-flexbox & {
+		.btn {
+  		
+		}
+		// 667
+		@media (min-width: $break-ml-phone) {
+  		.btn {
+    		 
+  		}
+		}
+	}
+}
+
+// Close Button
+
+.close-btn {	
+	&:hover, &:focus {
+		
+	}		
+}

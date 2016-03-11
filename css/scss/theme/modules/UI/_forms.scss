@@ -1,0 +1,106 @@
+// BASE FORM STYLES
+
+// Form Wrap
+
+.form-wrap {
+  div {
+     
+  }    
+}
+
+// input types
+
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {  
+			
+}
+
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	
+	&:focus,
+	&:active {
+  	
+	}
+}
+
+textarea {
+    
+}
+
+input[type="submit"] {
+  
+}
+
+// input group
+
+.input-group {
+    
+}
+
+label,
+.form-label,
+.EditingFormLabel {
+      
+} 
+
+// Checkbox List
+
+.checkbox-list {
+    
+}
+
+.checkbox-item {
+  
+  label {
+    
+    &:hover {
+      
+    }  
+  } 
+  input { 
+     
+  }
+}
+
+.checkbox-list-vertical {
+  label {
+        
+    &:hover {
+      
+    }  
+  } 
+}
+
+// Disabled State
+
+.disabled:hover {
+  
+}
+
+.disabled {
+	a,
+	button,
+	label,
+	input[type="text"],
+	input[type="checkbox"],
+	input[type="radio"] {
+  	
+  }
+}
+
+.content-label {
+      
+  &:after {
+         
+  }
+}

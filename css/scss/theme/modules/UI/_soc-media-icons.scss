@@ -1,0 +1,67 @@
+// Social Media Icons
+
+.soc-media-icons {
+	p {
+  	
+	}
+	a[class*="icon"] {
+			
+		&:before {
+				
+		}		
+	}
+	// 480
+	@media (min-width: $break-sm-phone) {
+		a[class*="icon"] {
+						
+		}
+	}
+	// 768
+	@media (min-width: $break-lg-phone) {
+		a[class*="icon"] {
+					
+		}	
+	}
+}
+
+// Social Media Links
+
+.soc-media-links {
+  
+  a {
+    
+    [class*="icon"] {
+      &:before {
+         
+      }
+    } 
+  }  
+  p {
+    font-weight: 800;
+    text-transform: uppercase;     
+  }
+  .post-list-item & a {
+    
+    i {
+      
+      &:before {
+          
+      }
+    }  
+  }
+  // 320
+  @media (min-width: $break-tiny-phone) {
+    p {
+          
+    }
+    a {
+         
+    }
+  } 
+  // 768
+  @media (min-width: $break-lg-phone) {   
+    p {
+         
+    }  
+  } 
+}
