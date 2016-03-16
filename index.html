@@ -29,96 +29,93 @@
     <meta name="msapplication-TileImage" content="../waas/CMS/App_Themes/Cornestone/images/touch-icons/favicon-144.png">
     <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
     <link rel="apple-touch-icon" href="../waas/CMS/App_Themes/Cornestone/images/touch-icons/favicon-152.png">   		
-    <!-- Core Critical CSS -->   		
-    <link rel="stylesheet" href="http://cdn.kyamedia.com/css/core.css">
-    <!-- Core Non-Critical CSS -->
+    <!-- Core CSS -->   		
+    <link rel="stylesheet" href="../core/css/core.css">
+    <!-- Non-Critical CSS -->
     <script>
        /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
-    (function(w){
-    	"use strict";
-    	/* exported loadCSS */
-    	var loadCSS = function( href, before, media ){
-    		// Arguments explained:
-    		// `href` [REQUIRED] is the URL for your CSS file.
-    		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
-    			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
-    		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
-    		var doc = w.document;
-    		var ss = doc.createElement( "link" );
-    		var ref;
-    		if( before ){
-    			ref = before;
-    		}
-    		else {
-    			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
-    			ref = refs[ refs.length - 1];
-    		}
+      (function(w){
+      	"use strict";
+      	/* exported loadCSS */
+      	var loadCSS = function( href, before, media ){
+      		// Arguments explained:
+      		// `href` [REQUIRED] is the URL for your CSS file.
+      		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+      		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+      		var doc = w.document;
+      		var ss = doc.createElement( "link" );
+      		var ref;
+      		if( before ){
+      			ref = before;
+      		}
+      		else {
+      			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+      			ref = refs[ refs.length - 1];
+      		}
+      
+      		var sheets = doc.styleSheets;
+      		ss.rel = "stylesheet";
+      		ss.href = href;
+      		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+      		ss.media = "only x";
+      
+      		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+      		function ready( cb ){
+      			if( doc.body ){
+      				return cb();
+      			}
+      			setTimeout(function(){
+      				ready( cb );
+      			});
+      		}
+      		// Inject link
+      			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+      		ready( function(){
+      			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+      		});
+      		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+      		var onloadcssdefined = function( cb ){
+      			var resolvedHref = ss.href;
+      			var i = sheets.length;
+      			while( i-- ){
+      				if( sheets[ i ].href === resolvedHref ){
+      					return cb();
+      				}
+      			}
+      			setTimeout(function() {
+      				onloadcssdefined( cb );
+      			});
+      		};
+      
+      		function loadCB(){
+      			if( ss.addEventListener ){
+      				ss.removeEventListener( "load", loadCB );
+      			}
+      			ss.media = media || "all";
+      		}
+      
+      		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+      		if( ss.addEventListener ){
+      			ss.addEventListener( "load", loadCB);
+      		}
+      		ss.onloadcssdefined = onloadcssdefined;
+      		onloadcssdefined( loadCB );
+      		return ss;
+      	};
+      	// commonjs
+      	if( typeof exports !== "undefined" ){
+      		exports.loadCSS = loadCSS;
+      	}
+      	else {
+      		w.loadCSS = loadCSS;
+      	}
+      }( typeof global !== "undefined" ? global : this ));
+      
+      loadCSS( "http://cdn.kyamedia.com/css/async.css" );
     
-    		var sheets = doc.styleSheets;
-    		ss.rel = "stylesheet";
-    		ss.href = href;
-    		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
-    		ss.media = "only x";
-    
-    		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
-    		function ready( cb ){
-    			if( doc.body ){
-    				return cb();
-    			}
-    			setTimeout(function(){
-    				ready( cb );
-    			});
-    		}
-    		// Inject link
-    			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
-    			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
-    		ready( function(){
-    			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
-    		});
-    		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
-    		var onloadcssdefined = function( cb ){
-    			var resolvedHref = ss.href;
-    			var i = sheets.length;
-    			while( i-- ){
-    				if( sheets[ i ].href === resolvedHref ){
-    					return cb();
-    				}
-    			}
-    			setTimeout(function() {
-    				onloadcssdefined( cb );
-    			});
-    		};
-    
-    		function loadCB(){
-    			if( ss.addEventListener ){
-    				ss.removeEventListener( "load", loadCB );
-    			}
-    			ss.media = media || "all";
-    		}
-    
-    		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
-    		if( ss.addEventListener ){
-    			ss.addEventListener( "load", loadCB);
-    		}
-    		ss.onloadcssdefined = onloadcssdefined;
-    		onloadcssdefined( loadCB );
-    		return ss;
-    	};
-    	// commonjs
-    	if( typeof exports !== "undefined" ){
-    		exports.loadCSS = loadCSS;
-    	}
-    	else {
-    		w.loadCSS = loadCSS;
-    	}
-    }( typeof global !== "undefined" ? global : this ));
-    
-    loadCSS( "http://cdn.kyamedia.com/css/async.css" );
-    
-    </script>
-    <noscript>
-      <link rel="stylesheet" href="http://cdn.kyamedia.com/css/async.css">
-    </noscript>    
+    </script>    
     <!-- Theme CSS -->   		
     <link rel="stylesheet" href="../waas/CMS/App_Themes/Cornerstone/theme.css">
     <!-- Theme Color -->   		
@@ -127,6 +124,7 @@
   	<script src="http://cdn.kyamedia.com/js/modernizr.js"></script>
   	<!-- noscript fallbacks -->
   	<noscript>
+  	  <link rel="stylesheet" href="http://cdn.kyamedia.com/css/async.css">
   	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Open+Sans+Condensed:300|Montserrat:400,700">
   	</noscript>  	
   </head>  
@@ -609,11 +607,11 @@
   		        <nav class="nav-collapse" role="navigation">
   		          <ul>		          
   			          <li class="active"><a href="about.html"> <svg class="icon"><use xlink:href="#icon-info" /></svg>About</a></li>         		            
-  		            <li class="dropdown">
+  		            <li>
   		            	<a href="calendar.html"><svg class="icon"><use xlink:href="#icon-calendar-alt" /></svg>Calendar <svg class="icon dir-down"><use xlink:href="#icon-caret" /></svg></a>
   										<ul class="sub-menu">
     										<li><a href="#">Submenu link</a></li>
-    										 <li class="dropdown">
+    										 <li>
                           <a href="#">Submenu link <svg class="icon dir-down"><use xlink:href="#icon-caret" /></a>
                           <ul class="sub-menu">
                             <li><a href="#">Sub Sublink</a></li>
@@ -626,7 +624,7 @@
   		            </li>
   		            <li><a href="membership.html"><svg class="icon"><use xlink:href="#icon-globe-alt" /></svg>Ministries</a></li>
   		            <li><a href="fundraising.html"><svg class="icon"><use xlink:href="#icon-tools" /></svg>Resources</a></li>
-  		            <li class="dropdown">
+  		            <li>
   		              <a href="contact.html"><svg class="icon"><use xlink:href="#icon-megaphone" /></svg>Contact <svg class="icon dir-down"><use xlink:href="#icon-caret" /></a>
   		                <ul class="sub-menu">
   											<li><a href="">Dropdown Link</a></li>
@@ -704,7 +702,7 @@
 			  </div>
 				  
 			  <!-- footer zone / "Contact Banner" -->
-			  <div class="footer-zone">
+			  <div class="footer-zone" style="display: none;">
 				  <div class="container">
   				  
             <!-- Contact Banner -->
@@ -748,7 +746,7 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>window.jQuery || document.write('<script src="http://cdn.kyamedia.com/js/libs/jquery-2.1.4.min.js"><\/script>')</script>
     <!-- Core Scripts -->
-    <script src="../core/js/min/core.min.js"></script>
+    <script src="http://cdn.kyamedia.com/js/min/core.min.js"></script>
     <!-- Theme Scripts -->
 		<script src="../waas/CMS/CMSScripts/Custom/Cornerstone/theme.min.js"></script>
   </body>

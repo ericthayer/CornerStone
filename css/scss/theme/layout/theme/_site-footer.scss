@@ -1,18 +1,14 @@
 // Footer Styles 
 
 .site-footer {
-	color: white;
-	padding-bottom: 0;  
 	font: {
   	family: $Montserrat;
   }  
-	// text-align: center; 
-	a {
-  	color: white;
-	}
-	.icon {
-  	fill: white;
-	}
+	// text-align: center;
+	.container:first-child {
+  	padding-top: 2em;
+  	padding-bottom: 2em;  
+	} 
 	.content-post li {
     span {
       display: inline-block;  
@@ -22,21 +18,26 @@
   
   [class*="-zone"] {
     &:nth-child(3) {
-      background-color: #166791;
+      .container {
+        padding-top: .75em;
+        padding-bottom: .75em;   
+      }
     }
   }
+  
 }
 
 // Footer Logo
 
 .footer-logo {
-  height: 50px; 
+  height: 30px;
+  margin-bottom: .5em;  
   img {
     max-width: 225px;  
   }
   .IE & {
-    img {
-      height: 30px;
+    height: 30px;
+    img {      
       max-width: 100%;   
     }
   } 

@@ -1,4 +1,4 @@
 
   // FitText
-  jQuery(".hero-headline").fitText(1.75, { minFontSize: '24px', maxFontSize: '55px' });
+  jQuery(".hero-headline").fitText(1.75, { minFontSize: '36px', maxFontSize: '55px' });
   

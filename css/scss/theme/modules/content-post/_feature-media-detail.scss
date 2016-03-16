@@ -31,32 +31,7 @@
   .post-list-item {
     
   }
-  .btn-primary {
-    font-size: 0.938em;    
-  }
-  // 375
-  @media (min-width: 23em) {
-    .post-media {  
-      .content-post {         
-       
-        &:nth-child(odd) {
-           
-        }
-        &:nth-child(even) {
-          
-        }
-      }
-      .post-content {
-            
-      }
-      .post-media {
-          
-      }
-      .post-text {
-         
-      }
-    }
-  }
+  
   // 667
   @media (min-width: $break-ml-phone) {
     .post-content,
@@ -69,16 +44,15 @@
       }
     }
   }
-  // 768
-  @media (min-width: $break-lg-phone) {
-    .post-wrap {
-      
+  // 992
+  @media (min-width: $break-md-screen) {
+    .content-post-wrap {
+      padding-top: 4.5em;  
+      padding-right: 2em;
+      padding-left: 2em; 
     }
     .post-content {
-        
-    }
-    .post-media {
-     
+      padding-bottom: 0;  
     }
   }   
 }

@@ -1,43 +1,8 @@
 // Feature Posts
 
-.feature-post-rows {
-  width: 100%;
-  // 667
-  @media (min-width: $break-ml-phone) {
-    .post-content {      
-       
-    }
-    .post-media {
-       
-    }
-    .content-post {
-        
-       &:nth-child(even) {         
-        .post-wrap{
-          
-        }
-        .post-content { 
-            
-        }
-      }
-    }
-  }
-  // 992
-  @media (min-width: $break-md-screen) {
-    .post-content {      
-       
-    }
-    .post-media {
-      
-    }
-  }
-}
-
-// Feature Posts
-
 .feature-post {
   .post-content {
-    
+   align-self: center; 
   }
   .post-content,
   .post-media {
@@ -46,42 +11,38 @@
 }
 
 .feature-posts {
-  
   .post-content,
   .post-media {
       
   }
-  .content-post,
-  .post-content,
-  .post-list {
-    
+  .post-text {
+    font-size: .875em;   
   }
-  .post-list {
-    li span {
-        
+  ul {
+    text-align: center;  
+    li {
+      display: inline-block;  
     }
-  }    
+  }   
   .post-content {
-    
+    align-self: center;
     p {
-       
+      margin-bottom: .5em; 
     }
-  }  
-  // 667
-  @media (min-width: $break-ml-phone) {
-    .post-content p {
-      
+  }
+  .button-group {
+    align-items: center;
+    justify-content: center;
+    [class*="btn"] {
+      max-width: 15em;
+      width: auto;    
     }
-    .post-list {
-      li {
-        
-      } 
-    }
+  }
+  // 540
+  @media (min-width: $break-md-phone) {
+    
   }
   // 992
   @media (min-width: $break-md-screen) {
-    .btn-primary {
-        
-    }  
   }
 }

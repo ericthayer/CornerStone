@@ -3,7 +3,8 @@
 @mixin button {
 	border-radius: 4px;
 	font: {
-		family: $OpenSans;
+		family: $sans-serif;
+		size: .875em;
 		weight: 800;
 	}
 	text-transform: uppercase;
@@ -19,10 +20,10 @@
 	&:active {
   	//background-color: darken($blue-med, 10%);
 	}
-	// 375
-	@media (min-width: 375px) {
-  	  
+	.wf-active & {
+  	font-family: $OpenSans;
 	}
+
 }
 
 @mixin button-hero {
